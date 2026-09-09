@@ -5,7 +5,7 @@ import { sendTelegramNotification } from './telegramBot.js';
 
 export const initCronJobs = () => {
   // Check every 30 minutes
-  cron.schedule('*/2 * * * *', async () => {
+  cron.schedule('*/30 * * * *', async () => {
     try {
       console.log('⏰ Running Telegram notification cron job...');
       const now = new Date();
